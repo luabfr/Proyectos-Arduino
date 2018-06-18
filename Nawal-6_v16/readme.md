@@ -2,15 +2,12 @@
  
  #  Author
  
- // Codigo : por Luciano Fritschy
- // Web : www.tacuaramultimedia.com.ar
- // Facebook : https://www.facebook.com/chamaco.fritschy
+       - Codigo : por Luciano Fritschy
+       - Web : www.tacuaramultimedia.com.ar
+       - Facebook : https://www.facebook.com/chamaco.fritschy
 
 # Comentarios
-* La libreria 'MIDI.h', funciona con errores cuando se utiliza la salida por DIN5. 
- Por eso la saqué. Ahora los mensajes se envian utlizando funciones propias.
- La unica cuestión, es que no estoy definiendo Canal MIDI. No se bien si se envian por OMNI, o qué.
- (El uso de los pedales SIN la LIBRERIA, ya está probado y todo anda perfecto.)*
+      - La libreria 'MIDI.h', funciona con errores cuando se utiliza la salida por DIN5.  Por eso la saqué. Ahora los mensajes se envian utlizando funciones propias. La unica cuestión, es que no estoy definiendo Canal MIDI. No se bien si se envian por OMNI, o qué. (El uso de los pedales SIN la LIBRERIA, ya está probado y todo anda perfecto.)
  
   
  
