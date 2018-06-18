@@ -1,17 +1,20 @@
 
- *  // Codigo : por Luciano Fritschy
- *  // Web : www.tacuaramultimedia.com.ar
- *  // Facebook : https://www.facebook.com/chamaco.fritschy
+ 
+ #  Author
+ 
+ // Codigo : por Luciano Fritschy
+ // Web : www.tacuaramultimedia.com.ar
+ // Facebook : https://www.facebook.com/chamaco.fritschy
 
-
-  ----------> La libreria 'MIDI.h', funciona con errores cuando se utiliza la salida por DIN5. 
-  ----------> Por eso la saqué. Ahora los mensajes se envian utlizando funciones propias.
-  ----------> La unica cuestión, es que no estoy definiendo Canal MIDI. No se bien si se envian por OMNI, o qué.
-  ----------> (El uso de los pedales SIN la LIBRERIA, ya está probado y todo anda perfecto.)
+# Comentarios
+* La libreria 'MIDI.h', funciona con errores cuando se utiliza la salida por DIN5. 
+ Por eso la saqué. Ahora los mensajes se envian utlizando funciones propias.
+ La unica cuestión, es que no estoy definiendo Canal MIDI. No se bien si se envian por OMNI, o qué.
+ (El uso de los pedales SIN la LIBRERIA, ya está probado y todo anda perfecto.)*
  
   
  
- #INFO: 
+ #  INFO: 
          - Este Sketch está hecho para un Controlador MIDI tipo Footswich/Pedal, para un ARDUINO UNO. (Para utilizarlo con MEGA quizas haya que modificar algo).
          - Posee 3 Escenas navegables utilizando 2 de los fooswitch.
          - Cada escena es indicada con un determinado color ( escena 1 = verde , escena 2 = rojo , escena 3 = naranja ).
@@ -20,8 +23,8 @@
          - Para ingresar al 'Modo Setup' se deben apretar al mismo tiempo los 2 botones de cambio de escena.
            - Una vez dentro, el led que indica la escena comenzara a PARPADEAR (a un ritmo lento). 
            - Entonces, para cambiar el comportamiento de cada footswitch (MOMENTANEO/SWITCH), solo hace falta apretar el footswitch desdeado.
-             · Si el comportamiento es Momentaneo (Program Change), el led del footswitch PARPADEARÁ.
-             · Si el comportamiento es Switch (Control Change), el led del footswitch SE MANTENDRÁ ENCENDIDO.
+             - Si el comportamiento es Momentaneo (Program Change), el led del footswitch PARPADEARÁ.
+             - Si el comportamiento es Switch (Control Change), el led del footswitch SE MANTENDRÁ ENCENDIDO.
          
          - Los footswitch de cada escena, envian mensajes ProgramChange/ControlChange distintos en independientes de las demas escenas.       
          - En escena verde los footswitch envian mensajes ProgramChange o ControlChange: 0 , 1 , 2 , 3
@@ -29,7 +32,7 @@
          - En escena naranja los footswitch envian mensajes ProgramChange o ControlChange: 8 , 9 , 10 , 11
          
  
- #INFO TECNICA: 
+ #  INFO TECNICA: 
          - El Sketch está hecho para funcionar con:
            - 6 Pulsadores.
            - 5 Leds Bicolor (led RG), de 3 patas (con negativo al centro).
@@ -39,7 +42,7 @@
            ----> De otra manera, la funcion leerá valores erroneos y enviara Mensajes MIDI no deseados.
  
  
- #CONEXIONES:        
+ #  CONEXIONES:        
            - Pulsadores: Se debe utilizar una resistencia de 1K en cada pulsador (ver en pagina de arduino).
            - Led bi color: · se debe conectar una resistencia de 220ohm a las patas VERDES. 
                            · se debe conectar una resistencia de 470ohm a las patas ROJAS.
@@ -47,7 +50,7 @@
         
   
  
- #REFER:
+ #  REFER:
          - Navegacion de Escenas: pines 2 y 3 . 
          - Pulsadores Switch: pines 4, 5 , 6 y 7 .
          - Leds de Navegacion: Pines: 8 , 9 .
